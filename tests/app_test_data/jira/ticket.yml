@@ -1,0 +1,273 @@
+jira_map:
+  assignee: assignee
+  audi_cluster: customfield_12600
+  audi_vr: customfield_12740
+  components: components
+  external_reference: customfield_10503
+  labels: labels
+  origin: customfield_12640
+  project: project
+  status: status
+  ticket_id: key
+  url: self
+raw:
+  expand: renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_12652.requestTypePractice
+  fields:
+    aggregateprogress:
+      progress: 0
+      total: 0
+    aggregatetimeestimate: null
+    aggregatetimeoriginalestimate: null
+    aggregatetimespent: null
+    assignee:
+      accountId: 63f87279c1f7acaf636ce8a9
+      accountType: atlassian
+      active: true
+      avatarUrls:
+        16x16: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/16
+        24x24: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/24
+        32x32: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/32
+        48x48: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/48
+      displayName: John Doe
+      emailAddress: john.doe@mocked_enterprise.com
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/user?accountId=63f87279c1f7acaf636ce8a9
+      timeZone: Europe/Berlin
+    attachment:
+    - author:
+        accountId: 63f87279c1f7acaf636ce8a9
+        accountType: atlassian
+        active: true
+        avatarUrls:
+          16x16: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/16
+          24x24: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/24
+          32x32: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/32
+          48x48: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/48
+        displayName: John Doe
+        emailAddress: john.doe@mocked_enterprise.com
+        self: https://mocked_enterprise.atlassian.net/rest/api/2/user?accountId=63f87279c1f7acaf636ce8a9
+        timeZone: Europe/Berlin
+      content: https://mocked_enterprise.atlassian.net/rest/api/2/attachment/content/132002
+      created: 2024-03-04T18:12:51.562+0100
+      filename: FR_SE0001.zip
+      id: '132002'
+      mimeType: application/zip
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/attachment/132002
+      size: 3008904
+    comment:
+      comments: []
+      maxResults: 0
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/issue/174573/comment
+      startAt: 0
+      total: 0
+    components:
+    - id: '23201'
+      name: Unknown
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/component/23201
+    created: 2024-03-04T18:12:35.638+0100
+    creator:
+      accountId: 63f87279c1f7acaf636ce8a9
+      accountType: atlassian
+      active: true
+      avatarUrls:
+        16x16: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/16
+        24x24: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/24
+        32x32: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/32
+        48x48: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/48
+      displayName: John Doe
+      emailAddress: john.doe@mocked_enterprise.com
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/user?accountId=63f87279c1f7acaf636ce8a9
+      timeZone: Europe/Berlin
+    customfield_10002: null
+    customfield_10004: null
+    customfield_10007: null
+    customfield_10008: null
+    customfield_10200: '2|i04znr:'
+    customfield_10400: null
+    customfield_10500: HCP5
+    customfield_10501:
+      id: '10103'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/10103
+      value: 03 - Frequent
+    customfield_10503: '9857187'
+    customfield_10900: Buriac, Liana (EEL2_EXTERN)
+    customfield_10901: null
+    customfield_11200: null
+    customfield_11300: null
+    customfield_11400:
+      hasEpicLinkFieldDependency: false
+      nonEditableReason:
+        message: To set an epic as the parent, use the epic link instead
+        reason: EPIC_LINK_SHOULD_BE_USED
+      showField: false
+    customfield_11800: null
+    customfield_11900: null
+    customfield_12500: null
+    customfield_12600:
+    - id: '10890'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/10890
+      value: Cluster 4.3
+    - id: '11346'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/11346
+      value: Cluster 4.6
+    customfield_12613: null
+    customfield_12617: null
+    customfield_12622:
+      id: '10729'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/10729
+      value: To be evaluated
+    customfield_12639: null
+    customfield_12640:
+      id: '11178'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/11178
+      value: Audi KPM
+    customfield_12652: null
+    customfield_12653: []
+    customfield_12654: null
+    customfield_12662: null
+    customfield_12673: null
+    customfield_12674: null
+    customfield_12683: null
+    customfield_12693: null
+    customfield_12703: ''
+    customfield_12708: null
+    customfield_12711: null
+    customfield_12713: null
+    customfield_12722: null
+    customfield_12723: null
+    customfield_12732: null
+    customfield_12733: null
+    customfield_12734: null
+    customfield_12736: null
+    customfield_12738: null
+    customfield_12740:
+    - id: '11306'
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/customFieldOption/11306
+      value: VR000
+    customfield_12742: " \U0001F4C6 \t 2024/03/04 16:42:01 \t\t | \t\t \U0001F4EE\
+      \ test@cariad.technology\n         \U0001F4DD \t KW10.1: Tracking\
+      \ Ticket CARIAD https://devstack.vwgroup.com/jira/browse/HVCDEV5-1797\n\n###############\n\
+      \n \U0001F4C6 \t 2024/03/04 15:52:44 \t\t | \t\t \U0001F4EE extern.test@porsche.de\n\
+      \         \U0001F4DD \t Siehe bitte Beanstandung\n\n"
+    customfield_12743: " \U0001F4C6 \t 2024/03/04 17:06:22\n         \U0001F4DD \t\
+      \ 04.03.2024: Ins System \xDCbernommen\n\n"
+    customfield_12745: null
+    customfield_12746: null
+    customfield_12747: null
+    customfield_12748: V04007005
+    customfield_12749: null
+    customfield_12752: null
+    customfield_12753: null
+    customfield_12754: null
+    customfield_12755: null
+    customfield_12758: null
+    customfield_12759: null
+    customfield_12760: null
+    customfield_12761: null
+    customfield_12762: null
+    customfield_12764: null
+    customfield_12765: null
+    customfield_12766: null
+    description: "1.?Short Text\nPnCRS does not set Status change to PnCS \n\n2.?Preconditions\n\
+      PnCs initialized\nNo ProvCert installed"
+    duedate: null
+    fixVersions: []
+    issuelinks: []
+    issuerestriction:
+      issuerestrictions: {}
+      shouldDisplay: false
+    issuetype:
+      avatarId: 11312
+      description: Issues from KPM (Audi) or QC (BMW)
+      hierarchyLevel: 0
+      iconUrl: https://mocked_enterprise.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/11312?size=medium
+      id: '10000'
+      name: Customer Issue
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/issuetype/10000
+      subtask: false
+    labels: []
+    lastViewed: 2024-03-08T08:59:10.256+0100
+    priority:
+      iconUrl: https://mocked_enterprise.atlassian.net/images/icons/priorities/minor.svg
+      id: '4'
+      name: Minor
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/priority/4
+    progress:
+      progress: 0
+      total: 0
+    project:
+      avatarUrls:
+        16x16: https://mocked_enterprise.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/16840?size=xsmall
+        24x24: https://mocked_enterprise.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/16840?size=small
+        32x32: https://mocked_enterprise.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/16840?size=medium
+        48x48: https://mocked_enterprise.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/16840
+      id: '14428'
+      key: AHCP5
+      name: Audi HCP5
+      projectCategory:
+        description: Project specific settings.
+        id: '10003'
+        name: Individuals
+        self: https://mocked_enterprise.atlassian.net/rest/api/2/projectCategory/10003
+      projectTypeKey: software
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/project/14428
+      simplified: false
+    reporter:
+      accountId: 63f87279c1f7acaf636ce8a9
+      accountType: atlassian
+      active: true
+      avatarUrls:
+        16x16: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/16
+        24x24: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/24
+        32x32: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/32
+        48x48: https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63f87279c1f7acaf636ce8a9/18315692-fe32-44b8-8553-92befdccaa32/48
+      displayName: John Doe
+      emailAddress: john.doe@mocked_enterprise.com
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/user?accountId=63f87279c1f7acaf636ce8a9
+      timeZone: Europe/Berlin
+    resolution: null
+    resolutiondate: null
+    status:
+      description: The issue is open and ready for the assignee to start work on it.
+      iconUrl: https://mocked_enterprise.atlassian.net/images/icons/statuses/open.png
+      id: '1'
+      name: Open
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/status/1
+      statusCategory:
+        colorName: blue-gray
+        id: 2
+        key: new
+        name: To Do
+        self: https://mocked_enterprise.atlassian.net/rest/api/2/statuscategory/2
+    statuscategorychangedate: 2024-03-04T18:12:35.977+0100
+    subtasks: []
+    summary: PnCRS does not set Status change to PnCS
+    timeestimate: null
+    timeoriginalestimate: null
+    timespent: null
+    timetracking: {}
+    updated: 2024-03-04T18:12:52.080+0100
+    versions:
+    - archived: false
+      description: Version is needed for the KPM-Sync tool (in case the version stated
+        in KPM does not match to any of our 'real' release version
+      id: '40262'
+      name: '-'
+      released: false
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/version/40262
+    votes:
+      hasVoted: false
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/issue/AHCP5-34483/votes
+      votes: 0
+    watches:
+      isWatching: false
+      self: https://mocked_enterprise.atlassian.net/rest/api/2/issue/AHCP5-34483/watchers
+      watchCount: 0
+    worklog:
+      maxResults: 20
+      startAt: 0
+      total: 0
+      worklogs: []
+    workratio: -1
+  id: '174573'
+  key: AHCP5-34483
+  self: https://mocked_enterprise.atlassian.net/rest/api/2/issue/174573

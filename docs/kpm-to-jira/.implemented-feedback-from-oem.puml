@@ -1,0 +1,15 @@
+@startuml
+actor User
+collections KPM
+control "KPM Sync" as App
+collections Jira
+User -> KPM: Adds a something to "Feedback from OEM"
+App -> KPM: Poll State (KPM ID)
+App -> Jira: Poll State (External Reference ID)
+App -> App: Detect new Feedback from OEM
+App -> Jira: Add the body of the Feedback from OEM filed to the Jira field
+User -> Jira: Adds an answer to "Feedback to OEM"
+App -> KPM: Append the body of the answer from the "Feedback to OEM" field from Jira to the KPM field "supplierresponse"
+App -> Jira: Clear the "Feedback to OEM" field on Jira
+App -> Jira: Update the "Feedback from OEM" with the appended text
+@enduml

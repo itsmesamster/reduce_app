@@ -1,0 +1,171 @@
+<DevelopmentProblem>
+    <ProblemNumber>9660300</ProblemNumber>
+    <LastChangeTimestamp>2023-10-11 08:12:49.571514</LastChangeTimestamp>
+    <Workflow>42</Workflow>
+    <ExternalProblemNumber>BOSCH_HCP5_1328168</ExternalProblemNumber>
+    <Exclaimer>SYSTEMUSER,BCMMQB37W</Exclaimer>
+    <ProblemDate>2023-10-09</ProblemDate>
+    <ProblemStatus>2</ProblemStatus>
+    <Rating> 4</Rating>
+    <Description>HTML (x) Trace () Screenshots () Other type\n\nNote : Ensure Test report</Description>
+    <ShortText>[SYSRS][D][OBD]Service 0x0A is not working correct</ShortText>
+    <Origin>
+        <Phase>LI</Phase>
+        <PhaseAddition>RB</PhaseAddition>
+        <SubProcess>EE</SubProcess>
+        <MainProcess>PEP</MainProcess>
+    </Origin>
+    <ActiveRole>V</ActiveRole>
+    <Creator>
+        <Address>
+            <AddressTimestamp>2019-12-03 15:09:41.386338</AddressTimestamp>
+            <ContactPerson>SIMON</ContactPerson>
+            <Description>HCP5 Lieferantenpostfach f&#252;r Bosch und ESR</Description>
+            <OrganisationalUnit>HCP5BS-ESR</OrganisationalUnit>
+            <Group />
+            <Plant>FF</Plant>
+        </Address>
+        <PersonalContractor>
+            <UserId>EV</UserId>
+            <UserName>SYSTEMUSER,BCMMQB37W</UserName>
+            <Email />
+            <Phone />
+        </PersonalContractor>
+    </Creator>
+    <Coordinator>
+        <OrderType>00</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp>
+                <ContactPerson>SIMON</ContactPerson>
+                <Description>HCP5</Description>
+                <OrganisationalUnit>HCP5</OrganisationalUnit>
+                <Group />
+                <Plant>21</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>E8</UserId>
+                <UserName>PHILLIP</UserName>
+                <Email>phillip@tech</Email>
+                <Phone>+49172-4</Phone>
+            </PersonalContractor>
+        </Contractor>
+        <Status>0</Status>
+    </Coordinator>
+    <ProblemSolver>
+        <OrderType>02</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2022-12-14 10:49:21.926078</AddressTimestamp>
+                <ContactPerson>SIMON</ContactPerson>
+                <Description>HCP5 (Basis-SW ohne SWC)</Description>
+                <OrganisationalUnit>HCP5</OrganisationalUnit>
+                <Group />
+                <Plant>71</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>SX</UserId>
+                <UserName>FLORIAN</UserName>
+                <Email>florian@tech</Email>
+                <Phone />
+            </PersonalContractor>
+        </Contractor>
+        <DueDate>2023-11-04+01:00</DueDate>
+        <Status>0</Status>
+    </ProblemSolver>
+    <Visibility>0</Visibility>
+    <StartOfProductionDate>2022-06-22</StartOfProductionDate>
+    <VBV />
+    <Section />
+    <ForemostGroupProject>
+        <Brand>AU</Brand>
+        <Project>4162</Project>
+        <Extension>EUB</Extension>
+        <Reporting>true</Reporting>
+        <LaunchPriority>01</LaunchPriority>
+        <LaunchPriorityExtension>03</LaunchPriorityExtension>
+    </ForemostGroupProject>
+    <Frequency>XG</Frequency>
+    <Repeatable>XH</Repeatable>
+    <ForemostTestPart>
+        <PartNumber>
+            <PreNumber> 85F</PreNumber>
+            <MiddleGroup>907</MiddleGroup>
+            <EndNumber>146</EndNumber>
+            <Index></Index>
+            <Charge></Charge>
+            <ChargeSerialNumber />
+        </PartNumber>
+        <PartName />
+        <Hardware>H24</Hardware>
+        <Software>0019</Software>
+        <EEDeviceType />
+        <SeFt />
+    </ForemostTestPart>
+    <EProject>0000000378</EProject>
+    <AuthorityToClose>false</AuthorityToClose>
+    <AuthorityToOutgoingCheck>false</AuthorityToOutgoingCheck>
+    <SpecialistCoordinator>
+        <OrderType>01</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2022-12-14 10:49:21.926078</AddressTimestamp>
+                <ContactPerson>SIMON</ContactPerson>
+                <Description>HCP5 (Basis-SW ohne SWC)</Description>
+                <OrganisationalUnit>HCP5</OrganisationalUnit>
+                <Group />
+                <Plant>71</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>EV</UserId>
+                <UserName>SIMON</UserName>
+                <Email>simon@tech</Email>
+                <Phone>+49-173-6</Phone>
+            </PersonalContractor>
+        </Contractor>
+        <DueDate>2023-11-04+01:00</DueDate>
+        <Status>0</Status>
+    </SpecialistCoordinator>
+    <Function />
+    <Kefa>
+        <Type>01</Type>
+        <DefectObjectId>0</DefectObjectId>
+        <DefectTypeId>0</DefectTypeId>
+    </Kefa>
+    <Country />
+    <ModuleRelevant>
+        <ModuleRelevant>00</ModuleRelevant>
+    </ModuleRelevant>
+    <EngineeringStatus>2</EngineeringStatus>
+    <SupplierStatus>4</SupplierStatus>
+    <Keyword />
+    <Supplier>
+        <OrderType>13</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2019-12-03 15:09:41.386338</AddressTimestamp>
+                <ContactPerson>SIMON</ContactPerson>
+                <Description>HCP5 Lieferantenpostfach f&#252;r Bosch und ESR</Description>
+                <OrganisationalUnit>HCP5BS-ESR</OrganisationalUnit>
+                <Group />
+                <Plant>FF</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>D1</UserId>
+                <UserName>GUIDO</UserName>
+                <Email>guido@accenture</Email>
+                <Phone />
+            </PersonalContractor>
+        </Contractor>
+        <DueDate>2023-11-04+01:00</DueDate>
+        <Status>0</Status>
+    </Supplier>
+    <TCB>false</TCB>
+    <LaunchPriority />
+    <TrafficLight>0</TrafficLight>
+    <VerbundRelease>
+        <Major>28</Major>
+        <Minor>.0</Minor>
+        <Extend>00</Extend>
+    </VerbundRelease>
+</DevelopmentProblem>

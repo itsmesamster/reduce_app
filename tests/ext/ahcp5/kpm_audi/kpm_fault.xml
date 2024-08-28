@@ -1,0 +1,20 @@
+b'<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+<wsa:MessageID xmlns:wsa="http://www.w3.org/2005/08/addressing">urn:uuid:60f76fc0-20c9-42dc-a123-21f844c81108</wsa:MessageID>
+<wsa:RelatesTo xmlns:wsa="http://www.w3.org/2005/08/addressing">urn:uuid:1ad36f7c-7558-11ed-967b-aff26cf4666f</wsa:RelatesTo>
+<wsa:To xmlns:wsa="http://www.w3.org/2005/08/addressing">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+</soap:Header>
+<soap:Body>
+<ns1:Fault xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/">
+<faultcode>ns1:Server</faultcode>
+<faultstring/>
+<detail>
+<ns2:KpmFault xmlns:ns2="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+<errorCode>FC_501</errorCode>
+<message>Given ProblemNumber could not be found in the database</message>
+</ns2:KpmFault>
+</detail>
+</ns1:Fault>
+</soap:Body>
+</soap:Envelope>'

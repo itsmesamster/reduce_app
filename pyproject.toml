@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "app"
+version = "0.2.2"
+description = "Sync issues between multiple Problem Management Systems"
+authors = ["ESRLabs Tooling Team"]
+
+[tool.poetry.scripts]
+kj = "app.service.hcp5.kpm2jira.cli:cli"
+mkj = "app.service.mod.kpm2jira.cli:cli"
+jj = "app.service.hcp5.jira2jira.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.12.2"
+click = "^8.1.7"
+jira = "^3.6.0"
+requests = "^2.31.0"
+loguru = "^0.7.2"
+schedule = "^1.2.1"
+pyyaml = "^6.0.1"
+
+# not actively used ->
+xmltodict = "^0.12.0"
+lxml = "^4.9.2"
+zeep = "^4.2.1"
+
+
+[tool.poetry.group.test.dependencies]
+ipykernel = "^6.22.0"
+bandit = "^1.7.4"
+pytest = "^7.1.1"
+black = "^23.9.1"
+ruff = "^0.0.291"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+reportGeneralTypeIssues = false
+typeCheckingMode = "off"
+reportInvalidTypeForm = "ignore"
+

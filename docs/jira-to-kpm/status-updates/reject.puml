@@ -1,0 +1,9 @@
+@startuml
+actor User
+collections Jira
+control "KPM Sync" as App
+collections KPM
+User -> Jira: Transition status to "REJECTED"
+App -> App: Detect Updated Status
+App -> KPM: Transition status to "Status 4 + Question"
+@enduml

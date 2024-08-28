@@ -1,0 +1,16 @@
+@startuml
+actor User
+collections KPM
+control "KPM Sync" as App
+collections Jira
+User -> KPM: Create new ticket in KPM
+App -> KPM: Poll State (KPM ID)
+App-> Jira: Poll State (External Reference ID)
+App -> App: Detect missing Jira tickets by KPM ID
+App -> Jira: Create new Jira ticket
+App-> Jira: Copy Fields
+Jira -> App: Return Jira ticket ID
+App -> KPM: Update KPM field "FEHLERNUMMER" with new Jira ticket ID
+App -> KPM: Update KPM field "STATUS" to "uebernommen"
+App -> KPM: Update KPM field "KOMMENTAR" with "$date - Ticket wurde in ESR Jira System uebernommen"
+@enduml

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Sync Reports</title>
+  </head>
+  <body>
+    {% if last_on %}
+    <h1>Last Sync finished {{last_on}}</h1>
+    {% endif %}
+    <br>
+    {% if files %}
+    <h1>Sync Reports:</h1>
+    <ul>
+      {% for file_name, file_and_url in files.items() %}
+        <br>
+        <li><a href="{{file_and_url}}">{{file_name}}</a></li>
+      {% endfor %}
+    {% else %}
+    <h1>No Sync Reports yet</h1>
+    {% endif %}
+    </ul>
+  </body>
+</html>

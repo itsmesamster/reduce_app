@@ -1,0 +1,20 @@
+@startuml
+!theme metal
+== Feedback to OEM/ Lieferantenaussage ==
+User -> KPM: Add Supplier Response (Lieferantenaussage)
+KPM2JiraSync -> KPM: Fetch issue
+KPM2JiraSync -> KPM2JiraSync: ?
+KPM2JiraSync -> Jira: Fill text box "Feedback to OEM" with Supplier Response content
+
+== Question to OEM/ Neue Rueckfrage ==
+User -> Jira: Add Question to OEM
+KPM2JiraSync -> KPM: Fetch issue
+KPM2JiraSync -> KPM2JiraSync: ?
+KPM2JiraSync -> KPM: Fill text box "Feedback to OEM" with Supplier Response content
+
+== Answer from OEM/ Antwort ==
+User -> KPM: Add Answer to previously asked "Question to OEM"
+KPM2JiraSync -> KPM: Fetch issue
+KPM2JiraSync -> KPM2JiraSync: ?
+KPM2JiraSync -> Jira: Append
+@enduml

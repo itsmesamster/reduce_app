@@ -1,0 +1,143 @@
+ActiveRole: V
+AuthorityToClose: 'false'
+AuthorityToOutgoingCheck: 'false'
+Coordinator:
+  Contractor:
+    Address:
+      AddressTimestamp: '2019-02-27 08:41:59.904'
+      ContactPerson: SIMON
+      Description: HCP5
+      Group: null
+      OrganisationalUnit: HCP5
+      Plant: '21'
+    PersonalContractor:
+      Email: phillip@tech
+      Phone: +49172-4
+      UserId: E8
+      UserName: PHILLIP
+  OrderType: '00'
+  Status: '0'
+Country: null
+Creator:
+  Address:
+    AddressTimestamp: '2019-12-03 15:09:41.386338'
+    ContactPerson: SIMON
+    Description: "HCP5 Lieferantenpostfach f\xFCr Bosch und ESR"
+    Group: null
+    OrganisationalUnit: HCP5BS-ESR
+    Plant: FF
+  PersonalContractor:
+    Email: null
+    Phone: null
+    UserId: EV
+    UserName: SYSTEMUSER,BCMMQB37W
+Description: 'HTML (x) Trace () Screenshots () Other type\n\nNote : Ensure Test report'
+EProject: 0000000378
+EngineeringStatus: '2'
+Exclaimer: SYSTEMUSER,BCMMQB37W
+ExternalProblemNumber: BOSCH_HCP5_1328168
+ForemostGroupProject:
+  Brand: AU
+  Extension: EUB
+  LaunchPriority: '01'
+  LaunchPriorityExtension: '03'
+  Project: '4162'
+  Reporting: 'true'
+ForemostTestPart:
+  EEDeviceType: null
+  Hardware: H24
+  PartName: null
+  PartNumber:
+    Charge: null
+    ChargeSerialNumber: null
+    EndNumber: '146'
+    Index: null
+    MiddleGroup: '907'
+    PreNumber: ' 85F'
+  SeFt: null
+  Software: 0019
+Frequency: XG
+Function: null
+Kefa:
+  DefectObjectId: '0'
+  DefectTypeId: '0'
+  Type: '01'
+Keyword: null
+LastChangeTimestamp: '2023-10-11 08:12:49.571514'
+LaunchPriority: null
+ModuleRelevant:
+  ModuleRelevant: '00'
+Origin:
+  MainProcess: PEP
+  Phase: LI
+  PhaseAddition: RB
+  SubProcess: EE
+ProblemDate: '2023-10-09'
+ProblemNumber: '9660300'
+ProblemSolver:
+  Contractor:
+    Address:
+      AddressTimestamp: '2022-12-14 10:49:21.926078'
+      ContactPerson: SIMON
+      Description: HCP5 (Basis-SW ohne SWC)
+      Group: null
+      OrganisationalUnit: HCP5
+      Plant: '71'
+    PersonalContractor:
+      Email: florian@tech
+      Phone: null
+      UserId: SX
+      UserName: FLORIAN
+  DueDate: 2023-11-04+01:00
+  OrderType: '02'
+  Status: '0'
+ProblemStatus: '2'
+Rating: ' 4'
+Repeatable: XH
+Section: null
+ShortText: '[SYSRS][D][OBD]Service 0x0A is not working correct'
+SpecialistCoordinator:
+  Contractor:
+    Address:
+      AddressTimestamp: '2022-12-14 10:49:21.926078'
+      ContactPerson: SIMON
+      Description: HCP5 (Basis-SW ohne SWC)
+      Group: null
+      OrganisationalUnit: HCP5
+      Plant: '71'
+    PersonalContractor:
+      Email: simon@tech
+      Phone: +49-173-6
+      UserId: EV
+      UserName: SIMON
+  DueDate: 2023-11-04+01:00
+  OrderType: '01'
+  Status: '0'
+StartOfProductionDate: '2022-06-22'
+Supplier:
+  Contractor:
+    Address:
+      AddressTimestamp: '2019-12-03 15:09:41.386338'
+      ContactPerson: SIMON
+      Description: "HCP5 Lieferantenpostfach f\xFCr Bosch und ESR"
+      Group: null
+      OrganisationalUnit: HCP5BS-ESR
+      Plant: FF
+    PersonalContractor:
+      Email: guido@accenture
+      Phone: null
+      UserId: D1
+      UserName: GUIDO
+  DueDate: 2023-11-04+01:00
+  OrderType: '13'
+  Status: '0'
+SupplierStatus: '4'
+TCB: 'false'
+TrafficLight: '0'
+VBV: null
+VerbundRelease:
+  Extend: '00'
+  Major: '28'
+  Minor: '.0'
+Visibility: '0'
+Workflow: '42'

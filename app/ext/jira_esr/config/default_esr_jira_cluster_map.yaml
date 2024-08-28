@@ -1,0 +1,235 @@
+Cluster 4.1:
+  VR14:
+    - G510
+  VR15:
+    - G710
+  VR16:
+    - G910
+    - G911
+    - G912
+    - G913
+    - G914
+    - G915
+    - G916
+    - G917
+    - G918
+  VR17:
+    - H110
+    - H111
+  VR18:
+    - H210
+    - H310
+    - H410
+    - H411
+    - H510
+    - H511
+    - H512
+    - H611
+    - H710
+    - H711
+    - H713
+    - H714
+    - H715
+    - L110
+    - L210
+    - H610
+    - H712
+  VR18.1:
+    - H811
+    - H910
+    - H810
+  VR18.2:
+    - H911
+    - H912
+    - H913
+  VR18.Security-MS1:
+    - S512
+  VR18.Security-MS2:
+    - S611
+    - S713
+    - S714
+    - S811
+  VR18.Security-MS3:
+    - S910
+
+Cluster 4.3:
+  VR21:
+    - M010
+    - M110
+    - M210
+    - M310
+    - M410
+    - M412
+    - M413
+    - M414
+    - M415
+    - M411
+  VR22:
+    - M416
+    - M417
+    - M418
+    - S418
+  VR24:
+    - M510
+    - M610
+    - M611
+    - M710
+    - M810
+    - M912
+    - M913
+    - M914
+    - M910
+  VR25:
+    - N010
+    - N110
+    - N210
+    - N211
+    - N212
+    - N213
+    - N214
+  VR26:
+    - Y010
+    - Y011
+    - Y110
+    - Y111
+    - Y210
+    - Y310
+    - Y311
+  VR27:
+    - Y410
+    - Y411
+    - Y412
+    - Y510
+    - Y511
+    - Y610
+    - Y611
+  VR28:
+    - '0010'
+    - '0011'
+    - '0012'
+    - '0013'
+    - '0014'
+    - '0015'
+    - '0016'
+    - '0017'
+    - '0018'
+    - '0019'
+    - '0020'
+    - Y710
+    - Y711
+    - Y810
+    - Y910
+    - Z010
+    - Z011
+    - Z110
+    - Z111
+    - Z410
+    - Z510
+    - Z511
+    - Z610
+    - Z611
+    - Z710
+
+
+Cluster 4.5:
+  VR29:
+    - A150
+    - A250
+    - A350
+    - A450
+    - A550
+    - A650
+    - A750
+  VR30:
+    - B050
+    - B150
+    - B250
+  VR31:
+    - B350
+    - B450
+    - B550
+  VR32:
+    - B650
+    - B750
+    - B850
+  VR33:
+    - C050
+    - C150
+    - C250
+  VR34:
+    - C350
+    - Y050
+    - Y150
+
+  VR35:
+    - dummy_value
+
+  
+Cluster 4.6:
+  VR32:
+    - A360
+    - A460
+    - A560
+    - A660
+    - A760
+    - B160
+
+  VR33:
+    - B260
+
+  VR34:
+    - B360
+    - B460
+    - B560
+
+  VR35:
+    - B660
+    - B760
+    - B860
+
+  VR36:
+    - B960
+    - C060
+    - C160
+
+  VR37:
+    - C260
+    - C360
+    - Y060
+
+  VR38:
+    - '0060'
+
+  VR39:
+    - dummy_value
+
+
+Cluster 4.7:
+
+  VR35:
+    - dummy_value
+
+  VR36:
+    - dummy_value
+
+  VR37:
+    - dummy_value
+
+  VR38:
+    - dummy_value
+
+  VR39:
+    - dummy_value
+
+  VR40:
+    - dummy_value
+
+  VR41:
+    - dummy_value
+
+  VR42:
+    - dummy_value
+
+
+# B2E0 -> The "E" is indicating that it's a "pre-" version/ Developer Version of the official release.
+# In this case it should B250 so for every sw the E could be relpaced by the cluster as Z610 == Z6E0 or B2E0 == B250

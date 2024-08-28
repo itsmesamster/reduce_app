@@ -1,0 +1,32 @@
+FROM python:3.12.2-alpine3.19 as python-base
+
+RUN apk --update --no-cache --virtual add build-base g++ libevent-dev bash libpq-dev libffi-dev
+RUN pip install --upgrade pip
+RUN pip install poetry
+RUN poetry config virtualenvs.in-project true
+
+ENV PATH="/usr/local/bin/poetry:${PATH}" PYTHONUNBUFFERED=1
+
+# !!! SERVICE NAME !!!
+ENV SERVICE="jira2jira"
+ENV APP_DIR="/__issue-sync-${SERVICE}"
+ENV SERVICE_DIR="hcp5/${SERVICE}"
+
+RUN mkdir -p ${APP_DIR}
+WORKDIR ${APP_DIR}
+ENV PYTHONPATH="${APP_DIR}/"
+COPY pyproject.toml poetry.lock ./
+RUN poetry install --sync --only main --no-root
+COPY app/core/ app/core/
+COPY app/ext/ app/ext/
+COPY app/service/${SERVICE_DIR}/ app/service/${SERVICE_DIR}/
+
+RUN apk add --no-cache tzdata
+ENV TZ=Europe/Berlin
+
+ENV VAULT_URL='https://vault.int.esrlabs.com'
+
+# python -> scheduler(main.sync)
+# ENTRYPOINT poetry shell
+CMD poetry run python app/service/${SERVICE_DIR}
+

@@ -1,0 +1,12 @@
+# Make sure all JIRA status changes are mapped/posted back to KPM + add status comments to KPM for each change.
+Guido’s comments:
+OPEN  -> [Date]: Ins System übernommen
+In ANALYSIS -> [Date]: Mit der Analyse begonnen , KPM status In Bearbeitung (1)
+IN REVIEW  -> [DATE]: Fix in Review, KPM status In Bearbeitung (1)
+IN PROGRESS -> [DATE]: Fix in Umsetzung, KPM status In Bearbeitung (1)
+INFO MISSING-> [Date]: Rückfrage gestellt , Content for Query from Jira QUESTION to OEM , KPM status recent status (+R)- will be added automatically -> therefore no status change needed.
+REJECTED -> [Date]: Rejected -> [(cause-of-reject)]: (content-of QUESTION to OEM) , KPM status Verification + query (4+R) -> Content of query: "Reject -> siehe Lieferantenaussage"
+REOPENED  -> [DATE]: Ticket wiedereröffnet, KPM Status Übernommen (0) 
++++++++++++++++++++++++++++++++++++++++
+FINAL STEP (if possible to realize)DONE  -> [Date]: gelöst in (fixversion): (gerrit-commit-title) , status GELÖST (5)
+IMPORTANT NOTE: When KPM is set to status 5. No further change is possible. Earliest after reassignement to ESR.

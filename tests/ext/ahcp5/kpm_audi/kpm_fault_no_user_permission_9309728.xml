@@ -1,0 +1,73 @@
+--uuid:3c38ed80-f294-490f-8d17-53ea5830fb3d
+Content-Type: text/xml; charset=UTF-8
+Content-Transfer-Encoding: binary
+Content-ID:<root.message@cxf.apache.org>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        <soap:Header>
+            <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+                <wsu:Timestamp wsu:Id="4a515c54-ac09-4471-9387-78b8e6b90b39"
+                    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                    <wsu:Created>2023-04-20T07:18:05Z</wsu:Created>
+                    <wsu:Expires>2023-04-20T07:23:05Z</wsu:Expires>
+                </wsu:Timestamp>
+                <saml2:Assertion ID="11fb1797-fb26-43e9-af6c-8267902655fd" IssueInstant="2023-04-20T07:18:05Z" Version="2.0"
+                    xmlns:vwsu="http://xmldefs.volkswagenag.com/Technical/Security/UsernameToken/V1"
+                    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml2:Issuer>https://ws-gateway.volkswagenag.com</saml2:Issuer>
+                    <saml2:Subject>
+                        <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#Anonymous">UNKNOWN</saml2:NameID>
+                        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches"/>
+                    </saml2:Subject>
+                    <saml2:Conditions NotBefore="2023-04-20T07:17:05Z" NotOnOrAfter="2023-04-20T07:23:05Z"/>
+                    <saml2:Advice>
+                        <saml2:Assertion ID="dc1ea37a-08c1-4b08-a449-82679026be34" IssueInstant="2023-04-20T07:18:05Z" Version="2.0">
+                            <saml2:Issuer>https://ws-gateway.volkswagenag.com</saml2:Issuer>
+                            <saml2:Subject>
+                                <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#UMSGlobalUserID">W4P83BH</saml2:NameID>
+                                <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches"/>
+                            </saml2:Subject>
+                            <saml2:Conditions NotBefore="2023-04-20T07:17:05Z" NotOnOrAfter="2023-04-20T07:23:05Z"/>
+                            <saml2:AuthnStatement AuthnInstant="2023-04-20T07:18:05Z">
+                                <saml2:AuthnContext>
+                                    <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient</saml2:AuthnContextClassRef>
+                                </saml2:AuthnContext>
+                            </saml2:AuthnStatement>
+                            <saml2:AttributeStatement>
+                                <saml2:Attribute Name="ValidationType"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <saml2:AttributeValue>sc:no-credential-validation-type</saml2:AttributeValue>
+                                </saml2:Attribute>
+                            </saml2:AttributeStatement>
+                        </saml2:Assertion>
+                    </saml2:Advice>
+                </saml2:Assertion>
+            </wsse:Security>
+            <ns1:To wsu:Id="2da29e0c-239f-4939-a303-78b8e6b96b38"
+                xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                xmlns:ns1="http://www.w3.org/2005/08/addressing">ws://volkswagenag.com/PP/QM/GroupProblemManagementService/V3</ns1:To>
+            <ns1:Action wsu:Id="cf03f038-499a-459b-aa99-78b8e6b9292f"
+                xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                xmlns:ns1="http://www.w3.org/2005/08/addressing">http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3/KpmService/GetDevelopmentProblemDataResponse</ns1:Action>
+            <ns1:MessageID wsu:Id="73691629-5495-43c0-93b2-78b8e6b99959"
+                xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                xmlns:ns1="http://www.w3.org/2005/08/addressing">urn:uuid:7cdaed14-df4b-11ed-aeba-922f25ee69bc</ns1:MessageID>
+            <wsa:RelatesTo xmlns:wsa="http://www.w3.org/2005/08/addressing">urn:uuid:7cdaed14-df4b-11ed-aeba-922f25ee69bc</wsa:RelatesTo>
+        </soap:Header>
+        <soap:Body>
+            <ns2:GetDevelopmentProblemDataResponse xmlns:ns2="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+                <GetDevelopmentProblemDataResponseInternal>
+                    <ResponseMessage>
+                        <MessageId>FC_512</MessageId>
+                        <MessageType>MT_FAULT</MessageType>
+                        <MessageText>The user has no permission to read the problem</MessageText>
+                        <SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@a42a2dd9</SessionKey>
+                        <VersionId>release_17.4.0</VersionId>
+                        <VersionDate>Mon Apr 10 11:25:52 CEST 2023</VersionDate>
+                    </ResponseMessage>
+                </GetDevelopmentProblemDataResponseInternal>
+            </ns2:GetDevelopmentProblemDataResponse>
+        </soap:Body>
+    </soap:Envelope>
+--uuid:3c38ed80-f294-490f-8d17-53ea5830fb3d--

@@ -1,0 +1,17 @@
+@startuml
+actor User
+collections KPM
+control "KPM Sync" as App
+collections Jira
+User -> KPM: Add answer to question in the "Rueckfrage" process
+App -> App: Detect new answer to question
+note left
+How can this be identified?
+end note
+App -> Jira: Add the answer to field "Answer from OEM"
+alt Status is INFO MISSING
+App -> Jira: Transition the status from INFO MISSING to IN ANALYSIS
+else Status is not INFO MISSING
+App -> App: Not defined
+end case
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+actor User
+collections Jira
+control "KPM Sync" as App
+collections KPM
+User -> Jira: Create new ticket in Jira
+App -> App: Detect missing KPM tickets by missing KPM ID
+App -> KPM: Create new KPM ticket
+KPM -> App: Return KPM ticket ID
+App -> Jira: Update Jira field "External Reference" with new Jira ticket ID
+App -> Jira: Update Jira field "Feedback to OEM" with message
+App -> KPM: Append
+App -> KPM: Update KPM ticket with specified fields
+@enduml

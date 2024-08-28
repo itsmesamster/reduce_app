@@ -1,0 +1,56 @@
+<ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns4="http://www.w3.org/2005/08/addressing" xmlns:ns5="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+<ns0:Header>
+<ns1:Security>
+<ns2:Timestamp ns2:Id="acc75ced-24ad-45ad-9485-78b8e6b96bc7">
+<ns2:Created>2023-01-09T16:30:53Z</ns2:Created>
+<ns2:Expires>2023-01-09T16:35:53Z</ns2:Expires>
+</ns2:Timestamp>
+<ns3:Assertion ID="75c80fc4-b4d3-4da1-b13c-d05a8da38767" IssueInstant="2023-01-09T16:30:53Z" Version="2.0">
+<ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer>
+<ns3:Subject>
+<ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#Anonymous">UNKNOWN</ns3:NameID>
+<ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" />
+</ns3:Subject>
+<ns3:Conditions NotBefore="2023-01-09T16:29:53Z" NotOnOrAfter="2023-01-09T16:35:53Z" />
+<ns3:Advice>
+<ns3:Assertion ID="f6efec21-10f4-4b74-8703-d05a8da3bba6" IssueInstant="2023-01-09T16:30:53Z" Version="2.0">
+<ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer>
+<ns3:Subject>
+<ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#UMSGlobalUserID">W4P83BH</ns3:NameID>
+<ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" />
+</ns3:Subject>
+<ns3:Conditions NotBefore="2023-01-09T16:29:53Z" NotOnOrAfter="2023-01-09T16:35:53Z" />
+<ns3:AuthnStatement AuthnInstant="2023-01-09T16:30:53Z">
+<ns3:AuthnContext>
+<ns3:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient</ns3:AuthnContextClassRef>
+</ns3:AuthnContext>
+</ns3:AuthnStatement>
+<ns3:AttributeStatement>
+<ns3:Attribute Name="ValidationType">
+<ns3:AttributeValue>sc:no-credential-validation-type</ns3:AttributeValue>
+</ns3:Attribute>
+</ns3:AttributeStatement>
+</ns3:Assertion>
+</ns3:Advice>
+</ns3:Assertion>
+</ns1:Security>
+<ns4:To ns2:Id="3676efe1-15fb-4510-ab33-78b8e6b906d5">ws://volkswagenag.com/PP/QM/GroupProblemManagementService/V3</ns4:To>
+<ns4:Action ns2:Id="eade6c57-bfbc-4b2c-a306-78b8e6b9e4f8">http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3/KpmService/GetProcessStepListResponse</ns4:Action>
+<ns4:MessageID ns2:Id="0941d580-914e-4296-be09-78b8e6b9bd0c">urn:uuid:fc62bf72-903a-11ed-9d77-a9904127df97</ns4:MessageID>
+<ns4:RelatesTo>urn:uuid:fc62bf72-903a-11ed-9d77-a9904127df97</ns4:RelatesTo>
+</ns0:Header>
+<ns0:Body>
+<ns5:GetProcessStepListResponse>
+<GetProcessStepListResponse>
+<ResponseMessage>
+<MessageId>FC_090</MessageId>
+<MessageType>MT_FAULT</MessageType>
+<MessageText>The user has no permission to execute action: GetProcessStepList for problem 9126474</MessageText>
+<SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@97ef7a58</SessionKey>
+<VersionId>release_17.1.0</VersionId>
+<VersionDate>Fri Nov 25 13:44:23 CET 2022</VersionDate>
+</ResponseMessage>
+</GetProcessStepListResponse>
+</ns5:GetProcessStepListResponse>
+</ns0:Body>
+</ns0:Envelope>

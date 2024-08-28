@@ -1,0 +1,96 @@
+<ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns4="http://www.w3.org/2005/08/addressing" xmlns:ns5="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+<ns0:Header>
+<ns1:Security>
+<ns2:Timestamp ns2:Id="376d9a20-fbc7-44e8-b9cd-ae5735d6b875">
+<ns2:Created>2023-01-10T14:43:44Z</ns2:Created>
+<ns2:Expires>2023-01-10T14:48:44Z</ns2:Expires>
+</ns2:Timestamp>
+<ns3:Assertion ID="f3f8d55e-3687-4c7e-b822-2eaf8bb7e768" IssueInstant="2023-01-10T14:43:44Z" Version="2.0">
+<ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer>
+<ns3:Subject>
+<ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#Anonymous">UNKNOWN</ns3:NameID>
+<ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" />
+</ns3:Subject>
+<ns3:Conditions NotBefore="2023-01-10T14:42:44Z" NotOnOrAfter="2023-01-10T14:48:44Z" />
+<ns3:Advice>
+<ns3:Assertion ID="7c7668a6-5a3e-4cd4-9d0a-2eaf8bb746a7" IssueInstant="2023-01-10T14:43:44Z" Version="2.0">
+<ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer>
+<ns3:Subject>
+<ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#UMSGlobalUserID">W4P83BH</ns3:NameID>
+<ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" />
+</ns3:Subject>
+<ns3:Conditions NotBefore="2023-01-10T14:42:44Z" NotOnOrAfter="2023-01-10T14:48:44Z" />
+<ns3:AuthnStatement AuthnInstant="2023-01-10T14:43:44Z">
+<ns3:AuthnContext>
+<ns3:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient</ns3:AuthnContextClassRef>
+</ns3:AuthnContext>
+</ns3:AuthnStatement>
+<ns3:AttributeStatement>
+<ns3:Attribute Name="ValidationType">
+<ns3:AttributeValue>sc:no-credential-validation-type</ns3:AttributeValue>
+</ns3:Attribute>
+</ns3:AttributeStatement>
+</ns3:Assertion>
+</ns3:Advice>
+</ns3:Assertion>
+</ns1:Security>
+<ns4:To ns2:Id="f2c597d1-b037-4f94-9916-ae5735d63392">ws://volkswagenag.com/PP/QM/GroupProblemManagementService/V3</ns4:To>
+<ns4:Action ns2:Id="7b162bda-7c04-4556-8812-ae5735d63c01">http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3/KpmService/GetProcessStepResponse</ns4:Action>
+<ns4:MessageID ns2:Id="f006127f-b1fa-4235-9e0f-ae5735d64e8f">urn:uuid:2e972e96-90f5-11ed-9d77-a9904127df97</ns4:MessageID>
+<ns4:RelatesTo>urn:uuid:2e972e96-90f5-11ed-9d77-a9904127df97</ns4:RelatesTo>
+</ns0:Header>
+<ns0:Body>
+<ns5:GetProcessStepResponse>
+<GetProcessStepResponse>
+<ResponseMessage>
+<MessageId>INFO_001</MessageId>
+<MessageType>MT_INFO</MessageType>
+<MessageText>Method completed successfully</MessageText>
+<SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@41320aa4</SessionKey>
+<VersionId>release_17.1.0</VersionId>
+<VersionDate>Fri Nov 25 13:44:23 CET 2022</VersionDate>
+</ResponseMessage>
+<ProcessStep>
+<ProblemNumber>8523055</ProblemNumber>
+<ProcessStepId>2021-06-17-10.46.37.466190</ProcessStepId>
+<LastChangeDate>2021-06-30 09:07:11.18778</LastChangeDate>
+<ProcessStepType>38</ProcessStepType>
+<ProcessStepTypeDescription>Lieferantenaussage</ProcessStepTypeDescription>
+<Status>3</Status>
+<SenderRole>B</SenderRole>
+<CreationDate>2021-06-17-10.46.37.466190</CreationDate>
+<Creator>
+<UserId>D19477R</UserId>
+<UserName>LI,JINSONG</UserName>
+<Email>Jinsong.Li@de.bosch.com</Email>
+<Phone />
+</Creator>
+<LastChanger>
+<UserId>AXIG5DX</UserId>
+<UserName>VASILE,FLAVIO</UserName>
+<Email>flavio.vasile@italdesign.it</Email>
+<Phone />
+</LastChanger>
+<Text>17.12.2020: ins System &#252;bernommen
+
+03.02.2021: DTC 1417 is logged for CANFD02 as expected, can't reproduce.
+
+26.02.2021: erneut in analyse
+
+13.04.2021: Update CAN diag timeouts to CAN LAH 6.0
+
+12.05.2021: reopen
+
+17.05.2021: Traces vom Nachtest fehlen!
+
+17.06.2021: update: CAN9 BusDefect fault DTC not logged in SW G311</Text>
+<SupplierResponse>
+<Status>0</Status>
+<ErrorNumber>AHCP5-6101</ErrorNumber>
+<VersionOk />
+</SupplierResponse>
+</ProcessStep>
+</GetProcessStepResponse>
+</ns5:GetProcessStepResponse>
+</ns0:Body>
+</ns0:Envelope>

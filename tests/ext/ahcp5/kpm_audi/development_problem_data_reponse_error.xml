@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header></soap:Header>
+<soap:Body>
+<ns2:GetDevelopmentProblemDataResponse xmlns:ns2="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+<GetDevelopmentProblemDataResponseInternal>
+<ResponseMessage>
+<MessageId>FC_512</MessageId>
+<MessageType>MT_FAULT</MessageType>
+<MessageText>The user has no permission to read the problem</MessageText>
+<SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@2d9ec8fc</SessionKey>
+<VersionId>release_17.0.4</VersionId>
+<VersionDate>Wed Oct 12 12:33:34 CEST 2022</VersionDate>
+</ResponseMessage>
+</GetDevelopmentProblemDataResponseInternal>
+</ns2:GetDevelopmentProblemDataResponse>
+</soap:Body>
+</soap:Envelope>

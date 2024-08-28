@@ -1,0 +1,49 @@
+version: "3.3"
+
+name: issue-sync
+
+services:
+
+  issue-sync-hcp5-kpm2jira:
+    container_name: issue-sync-hcp5-kpm2jira
+    image: docker.int.esrlabs.com/issue-sync-hcp5-kpm2jira:stable
+    restart: unless-stopped
+    environment:
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500m"
+        max-file: "5"
+    labels:
+      com.docker.compose.env: ${DEPLOY_ENV}
+
+  issue-sync-jira2jira:
+    container_name: issue-sync-jira2jira
+    image: docker.int.esrlabs.com/issue-sync-hcp5-jira2jira:stable
+    restart: unless-stopped
+    environment:
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500m"
+        max-file: "5"
+    labels:
+      com.docker.compose.env: ${DEPLOY_ENV}
+
+  issue-sync-mod-kpm2jira:
+    container_name: issue-sync-mod-kpm2jira
+    image: docker.int.esrlabs.com/issue-sync-mod-kpm2jira:stable
+    restart: unless-stopped
+    environment:
+      VAULT_TOKEN: ${VAULT_TOKEN}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500m"
+        max-file: "5"
+    labels:
+      com.docker.compose.env: ${DEPLOY_ENV}
+
+      

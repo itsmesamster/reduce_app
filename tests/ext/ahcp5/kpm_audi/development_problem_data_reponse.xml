@@ -1,0 +1,386 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header></soap:Header>
+<soap:Body>
+<ns2:GetDevelopmentProblemDataResponse xmlns:ns2="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3">
+<GetDevelopmentProblemDataResponseInternal>
+<ResponseMessage>
+<MessageId>INFO_001</MessageId>
+<MessageType>MT_INFO</MessageType>
+<MessageText>Method completed successfully</MessageText>
+<SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@2d9ec8fc</SessionKey>
+<VersionId>release_17.0.4</VersionId>
+<VersionDate>Wed Oct 12 12:33:34 CEST 2022</VersionDate>
+</ResponseMessage>
+<DevelopmentProblem>
+    <ProblemNumber>9029473</ProblemNumber>
+    <LastChangeTimestamp>2022-07-06 14:16:25.181356</LastChangeTimestamp>
+    <Workflow>42</Workflow>
+    <ExternalProblemNumber/>
+    <Exclaimer>Li, Yunjuan (EXTERN: EDAG)</Exclaimer>
+    <ProblemDate>2022-06-09</ProblemDate>
+    <ProblemStatus>5</ProblemStatus>
+    <Rating> 1</Rating>
+    <Description>[Title]:
+
+    [HCP5][VR21, SW M110] Steckerstatus Fehlerhaft
+
+
+    [Priority]:
+
+    A+
+
+
+
+    [time of error]:
+
+    03.06.2022
+
+
+
+    [SOP Date]:
+
+
+
+    [Test Environment]:
+
+    Fzg Nr: SEU801
+
+
+
+    [Konzern Projekt]:
+
+    PO426
+
+
+    [Anlauf]:
+
+
+
+
+
+    [Verbund Release]:
+
+    VR21
+
+
+
+    [Hardware/Software/Teilnummer]:
+
+    HCP5 SW M110
+
+
+
+    [Description]:
+
+    HVLM Steckerstatus steht dauerhaft auf Fehler.
+
+
+    [PreCondition]:
+
+    KL 15 on
+
+
+    [Test Steps]:
+
+    KL15 Wechsel durchf&#252;hren
+
+
+
+    [Expected Result]:
+
+    HVLM Steckerstatus sendet kein Stecker erkannt.
+
+
+
+    [Observed Result]:
+
+    HVLM Steckerstatus sendet Fehler.
+
+    [Occurence &amp; Healing]:
+
+    immer
+
+
+
+    [Attachments]:
+
+    die Tracedaten
+
+    [ADO Testcase Id]:
+
+
+    [ADO Bug Id]:
+
+     493559
+
+    [Requirement]:
+
+
+
+
+    [Contact]:
+
+    Name: Melih Can
+
+    Email: melih.can@edag.com
+
+               extern.melih.can@cariad.technology
+
+    mobil: +49 1709878410
+    </Description>
+    <ShortText>[K] HVLM_Steckerstatus dauerhaft in Fehler</ShortText>
+    <Origin>
+        <Phase>ALLG</Phase>
+        <PhaseAddition>PORSCHE</PhaseAddition>
+        <SubProcess>PO</SubProcess>
+        <MainProcess>PEA</MainProcess>
+    </Origin>
+    <ActiveRole/>
+    <Creator>
+        <Address>
+            <AddressTimestamp>2020-10-19 12:51:20.554926</AddressTimestamp>
+            <ContactPerson>KLIEBISCH,CHRISTOPHE</ContactPerson>
+            <Description>Steering Integration / Function Integration</Description>
+            <OrganisationalUnit>E3-ONEROOM</OrganisationalUnit>
+            <Group/>
+            <Plant>71</Plant>
+        </Address>
+        <PersonalContractor>
+            <UserId>GFH74DK</UserId>
+            <UserName>LI,YUNJUAN</UserName>
+            <Email>extern.yunjuan.li@cariad.technology</Email>
+            <Phone/>
+        </PersonalContractor>
+    </Creator>
+    <Coordinator>
+        <OrderType>00</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2020-10-19 12:51:20.554926</AddressTimestamp>
+                <ContactPerson>KLIEBISCH,CHRISTOPHE</ContactPerson>
+                <Description>Steering Integration / Function Integration</Description>
+                <OrganisationalUnit>E3-ONEROOM</OrganisationalUnit>
+                <Group/>
+                <Plant>71</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>GFH74DK</UserId>
+                <UserName>LI,YUNJUAN</UserName>
+                <Email>extern.yunjuan.li@cariad.technology</Email>
+                <Phone/>
+            </PersonalContractor>
+        </Contractor>
+        <Status>1</Status>
+    </Coordinator>
+    <ProblemSolver>
+        <OrderType>02</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp>
+                <ContactPerson>BIEDERMANN,SIMON</ContactPerson>
+                <Description>HCP5</Description>
+                <OrganisationalUnit>HCP5</OrganisationalUnit>
+                <Group/>
+                <Plant>21</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>VIGFBEM</UserId>
+                <UserName>GUTIERREZ NUNEZ,JOSE LUIS</UserName>
+                <Email>jose.luis.gutierrez.nunez@cariad.technology</Email>
+                <Phone>+4915258812-438</Phone>
+            </PersonalContractor>
+        </Contractor>
+        <DueDate>2022-07-02+02:00</DueDate>
+        <Status>1</Status>
+    </ProblemSolver>
+    <Visibility>0</Visibility>
+    <StartOfProductionDate>2023-05-01</StartOfProductionDate>
+    <VBV/>
+    <Section/>
+    <ForemostGroupProject>
+        <Brand>PO</Brand>
+        <Project>426</Project>
+        <Reporting>true</Reporting>
+        <LaunchPriority>01</LaunchPriority>
+    </ForemostGroupProject>
+    <Frequency>XG</Frequency>
+    <AdditionalCriteriaList>
+        <AdditionalCriteria description="Fehler bei der Inbetriebnahme (z.B. falscher ZDC)">&#167;I</AdditionalCriteria>
+    </AdditionalCriteriaList>
+    <Repeatable>XH</Repeatable>
+    <ForemostTestPart>
+        <PartNumber>
+            <PreNumber> 85F</PreNumber>
+            <MiddleGroup>907</MiddleGroup>
+            <EndNumber>468</EndNumber>
+            <Index>  </Index>
+            <Charge>    </Charge>
+            <ChargeSerialNumber/>
+        </PartNumber>
+        <PartName>HV Fehlererkennung und -reaktion</PartName>
+        <Hardware>-</Hardware>
+        <Software>M110</Software>
+        <EEDeviceType/>
+        <SeFt/>
+    </ForemostTestPart>
+    <ForemostTestVehicle>
+        <VehicleNumber>PO426008001</VehicleNumber>
+        <Rating> 1</Rating>
+        <Mileage>0</Mileage>
+        <Dimension>K</Dimension>
+        <ForceMileage>false</ForceMileage>
+    </ForemostTestVehicle>
+    <EProject>0000000378</EProject>
+    <AuthorityToClose>false</AuthorityToClose>
+    <AuthorityToOutgoingCheck>false</AuthorityToOutgoingCheck>
+    <SpecialistCoordinator>
+        <OrderType>01</OrderType>
+        <Contractor>
+            <Address>
+                <AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp>
+                <ContactPerson>BIEDERMANN,SIMON</ContactPerson>
+                <Description>HCP5</Description>
+                <OrganisationalUnit>HCP5</OrganisationalUnit>
+                <Group/>
+                <Plant>21</Plant>
+            </Address>
+            <PersonalContractor>
+                <UserId>EV6K03O</UserId>
+                <UserName>BIEDERMANN,SIMON</UserName>
+                <Email>simon.biedermann@cariad.technology</Email>
+                <Phone>+49-173-6375919</Phone>
+            </PersonalContractor>
+        </Contractor>
+        <DueDate>2022-07-02+02:00</DueDate>
+        <Status>1</Status>
+    </SpecialistCoordinator>
+    <Function>HL 0000001</Function>
+    <Kefa>
+        <Type>01</Type>
+        <DefectObjectId>111111</DefectObjectId>
+        <DefectTypeId>0</DefectTypeId>
+    </Kefa>
+    <Country>X0A</Country>
+    <ModuleRelevant>
+        <ModuleRelevant>00</ModuleRelevant>
+    </ModuleRelevant>
+    <EngineeringStatus>5</EngineeringStatus>
+    <SupplierStatus>5</SupplierStatus>
+    <Keyword>Speedb_FahrenLaden</Keyword>
+    <Supplier>
+    <OrderType>13</OrderType>
+    <Contractor>
+    <Address>
+    <AddressTimestamp>2019-12-03 15:09:41.386338</AddressTimestamp>
+    <ContactPerson>BIEDERMANN,SIMON</ContactPerson>
+    <Description>HCP5 Lieferantenpostfach f&#252;r Bosch und ESR</Description>
+    <OrganisationalUnit>HCP5BS-ESR</OrganisationalUnit>
+    <Group/>
+    <Plant>FF</Plant>
+    </Address>
+    <PersonalContractor>
+    <UserId>D962178</UserId>
+    <UserName>ANDERWALD,FABIENNE</UserName>
+    <Email>fabienne.anderwald@esrlabs.com</Email>
+    <Phone/>
+    </PersonalContractor>
+    </Contractor>
+    <DueDate>2022-07-02+02:00</DueDate>
+    <Status>1</Status>
+    </Supplier>
+    <TCB>false</TCB>
+    <LaunchPriority/>
+    <TrafficLight>1</TrafficLight>
+    <DriveType>04</DriveType>
+    <VerbundRelease>
+    <Major>21</Major>
+    <Minor>.0</Minor>
+    <Extend>00</Extend>
+    </VerbundRelease>
+    <SollVerbundRelease>
+    <Major>21</Major>
+    <Minor>.0</Minor>
+    <Extend>00</Extend>
+    </SollVerbundRelease>
+</DevelopmentProblem>
+</GetDevelopmentProblemDataResponseInternal>
+</ns2:GetDevelopmentProblemDataResponse>
+</soap:Body>
+</soap:Envelope>
+
+
+
+<ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns4="http://www.w3.org/2005/08/addressing" xmlns:ns5="http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3"><ns0:Header><ns1:Security><ns2:Timestamp ns2:Id="473cb09f-838c-4a74-ad45-21f844c8ab95"><ns2:Created>2023-01-09T16:37:41Z</ns2:Created><ns2:Expires>2023-01-09T16:42:41Z</ns2:Expires></ns2:Timestamp><ns3:Assertion ID="07edea2b-65f9-46ba-ba41-d05a8da31a6b" IssueInstant="2023-01-09T16:37:41Z" Version="2.0"><ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer><ns3:Subject><ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#Anonymous">UNKNOWN</ns3:NameID><ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" /></ns3:Subject><ns3:Conditions NotBefore="2023-01-09T16:36:41Z" NotOnOrAfter="2023-01-09T16:42:41Z" /><ns3:Advice><ns3:Assertion ID="8723a2e1-1d5e-41fd-8fb6-d05a8da3181d" IssueInstant="2023-01-09T16:37:41Z" Version="2.0"><ns3:Issuer>https://ws-gateway.volkswagenag.com</ns3:Issuer><ns3:Subject><ns3:NameID Format="urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified" NameQualifier="http://xmldefs.volkswagenag.com/Technical/Security/NameQualifier/V1#UMSGlobalUserID">W4P83BH</ns3:NameID><ns3:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches" /></ns3:Subject><ns3:Conditions NotBefore="2023-01-09T16:36:41Z" NotOnOrAfter="2023-01-09T16:42:41Z" /><ns3:AuthnStatement AuthnInstant="2023-01-09T16:37:41Z"><ns3:AuthnContext><ns3:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient</ns3:AuthnContextClassRef></ns3:AuthnContext></ns3:AuthnStatement><ns3:AttributeStatement><ns3:Attribute Name="ValidationType"><ns3:AttributeValue>sc:no-credential-validation-type</ns3:AttributeValue></ns3:Attribute></ns3:AttributeStatement></ns3:Assertion></ns3:Advice></ns3:Assertion></ns1:Security><ns4:To ns2:Id="56cdd8c3-fb77-4544-986f-21f844c8099c">ws://volkswagenag.com/PP/QM/GroupProblemManagementService/V3</ns4:To><ns4:Action ns2:Id="1f8167c8-d8aa-4d4c-bd57-21f844c8bdad">http://xmldefs.volkswagenag.com/PP/QM/GroupProblemManagementService/V3/KpmService/GetDevelopmentProblemDataResponse</ns4:Action><ns4:MessageID ns2:Id="8c80a383-e445-4462-a6cd-21f844c8d84d">urn:uuid:efc546a8-903b-11ed-9d77-a9904127df97</ns4:MessageID><ns4:RelatesTo>urn:uuid:efc546a8-903b-11ed-9d77-a9904127df97</ns4:RelatesTo></ns0:Header><ns0:Body><ns5:GetDevelopmentProblemDataResponse><GetDevelopmentProblemDataResponseInternal><ResponseMessage><MessageId>INFO_001</MessageId><MessageType>MT_INFO</MessageType><MessageText>Method completed successfully</MessageText><SessionKey>de.volkswagen.kpm.backend.command.KPMSessionImpl@97ef7a58</SessionKey><VersionId>release_17.1.0</VersionId><VersionDate>Fri Nov 25 13:44:23 CET 2022</VersionDate></ResponseMessage><DevelopmentProblem><ProblemNumber>8523055</ProblemNumber><LastChangeTimestamp>2021-06-30 09:07:52.593508</LastChangeTimestamp><Workflow>42</Workflow><ExternalProblemNumber /><Exclaimer>Rossow, Ronny (EXTERN: Robert</Exclaimer><ProblemDate>2020-12-14</ProblemDate><ProblemStatus>5</ProblemStatus><Rating> 4</Rating><Description>==================================================
+Test environment:
+() SiL () MiL (X) HiL () Vehicle
+
+HiL5 HCP5 ECU Information:
+
+   - ECU:                         HCP5 B2 Sample
+   - V&amp;V Sample:           #007 + #008
+   - HW:                          B2
+   - SW &#181;C:                     X710
+   - SW &#181;P:                     X710
+   - SW Bootloader:        X710
+   - Switch 0:
+
+HiL Setup:
+   - CANoe:                   v13.0.118 (SP2)
+   - PDX:                        V001030
+   - XCP:                        none
+   - Data bases:
+   - DiVa:                       v13.0
+   - ODIS:                      v12.1.1
+   - ODIS Diag. Data:     AUE41 (0.32)
+   - CANoe Config:      C:\Tools\CANoeConfig_HCP5\VR_V12.03.21F_20200804\CANoe_RBS\HCP5_RBS.cfg
+                                   C:\Tools\CANoeConfig_HCP5\VR_V12.03.21F_20200817\B1_Sample\CANoe_RBS
+==================================================
+SW &amp; HW Variant: X710 &amp; B2-Advanced
+ECU variant tested : () Elemental  () Standard (x) Advanced () Maximum
+HW version tested : B2-Advanced
+SW version tested : X711/X710
+==================================================
+AUDI Inputs:
+Versions of ARXML/DBCs/LDFs :
+Versions of PDX :
+Version of Routing-Matrix ( applicable for routing Tests) :
+
+==================================================
+Requirement(CRS IDs): CANPS_389,Dia_Err_685, Dia_Err_694
+==================================================
+Test case ID(s): 125671: TCS_CAN_Electrical _Fault_between_CANL_and_CANH
+
+==================================================
+Issue description:
+DTC 0x001417 is not logged for CAN9 H-L bus short Defect
+
+Test Case Steps :
+
+Precondition:
+* Turn on KL_30.
+
+* NWDF released.
+
+Stimulation :
+
+StimulationExpected Result
+Step 1Turn on KL_15KL_15 is ON
+Step 2Wait for 5 seconds.
+
+Step 3Create a short circuit between CAN1 CAN_H and CAN_L.Short circuit is created.
+Step 4Wait for 2 seconds
+
+Step 5Read the Fault MemoryConcerned 0x001417 DTC is read.
+Step 6Remove the short circuit between CAN_H and CAN_LFault is removed.
+Step 7Wait for 30 seconds after the error has been removed
+Step 8Check for cyclic transmission of messagesNormal Cyclic messages are transmitted.
+
+
+Expected Behavior:
+0x001417 DTC should be logged and active.
+
+Observed Behavior:
+0x001417 DTC not logged in the fault memeory
+
+Test Status : FAIL
+==================================================</Description><ShortText>[D][ESR]DTC 0x01417 is not log. CAN9 H-L short</ShortText><Origin><Phase>LI</Phase><PhaseAddition>RB</PhaseAddition><SubProcess>EE</SubProcess><MainProcess>PEP</MainProcess></Origin><ActiveRole /><Creator><Address><AddressTimestamp>2019-12-03 15:09:41.386338</AddressTimestamp><ContactPerson>BIEDERMANN,SIMON</ContactPerson><Description>HCP5 Lieferantenpostfach f&#252;r Bosch und ESR</Description><OrganisationalUnit>HCP5BS-ESR</OrganisationalUnit><Group /><Plant>FF</Plant></Address><PersonalContractor><UserId>D833170</UserId><UserName>ROSSOW,RONNY</UserName><Email>Ronny.Rossow@de.bosch.com</Email><Phone /></PersonalContractor></Creator><Coordinator><OrderType>00</OrderType><Contractor><Address><AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp><ContactPerson>BIEDERMANN,SIMON</ContactPerson><Description>HCP5</Description><OrganisationalUnit>HCP5</OrganisationalUnit><Group /><Plant>21</Plant></Address><PersonalContractor><UserId>F3XOCLR</UserId><UserName>KOLBUS,PHILIPP</UserName><Email>philipp.kolbus@audi.de</Email><Phone /></PersonalContractor></Contractor><Status>1</Status></Coordinator><ProblemSolver><OrderType>02</OrderType><Contractor><Address><AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp><ContactPerson>BIEDERMANN,SIMON</ContactPerson><Description>HCP5</Description><OrganisationalUnit>HCP5</OrganisationalUnit><Group /><Plant>21</Plant></Address><PersonalContractor><UserId>WHRST16</UserId><UserName>RICHTER,CHRISTIAN</UserName><Email>christian.richter@cariad.technology</Email><Phone>+491525-4905990</Phone></PersonalContractor></Contractor><DueDate>2021-01-09+01:00</DueDate><Status>1</Status></ProblemSolver><Visibility>0</Visibility><StartOfProductionDate>2022-06-20</StartOfProductionDate><VBV /><Section /><ForemostGroupProject><Brand>AU</Brand><Project>402</Project><Reporting>true</Reporting></ForemostGroupProject><Frequency>XG</Frequency><Repeatable>XH</Repeatable><ForemostTestPart><PartNumber><PreNumber> 85F</PreNumber><MiddleGroup>907</MiddleGroup><EndNumber>468</EndNumber><Index>  </Index><Charge>    </Charge><ChargeSerialNumber /></PartNumber><PartName /><Hardware>B2</Hardware><Software>X710</Software><EEDeviceType /><SeFt /></ForemostTestPart><EProject>0000000378</EProject><AuthorityToClose>false</AuthorityToClose><AuthorityToOutgoingCheck>false</AuthorityToOutgoingCheck><SpecialistCoordinator><OrderType>01</OrderType><Contractor><Address><AddressTimestamp>2019-02-27 08:41:59.904</AddressTimestamp><ContactPerson>BIEDERMANN,SIMON</ContactPerson><Description>HCP5</Description><OrganisationalUnit>HCP5</OrganisationalUnit><Group /><Plant>21</Plant></Address><PersonalContractor><UserId>F3XOCLR</UserId><UserName>KOLBUS,PHILIPP</UserName><Email>philipp.kolbus@audi.de</Email><Phone /></PersonalContractor></Contractor><DueDate>2021-01-09+01:00</DueDate><Status>1</Status></SpecialistCoordinator><Function /><Kefa><Type>01</Type><DefectObjectId>0</DefectObjectId><DefectTypeId>0</DefectTypeId></Kefa><Country /><ModuleRelevant><ModuleRelevant>00</ModuleRelevant></ModuleRelevant><EngineeringStatus>5</EngineeringStatus><SupplierStatus>6</SupplierStatus><Keyword /><Supplier><OrderType>13</OrderType><Contractor><Address><AddressTimestamp>2019-12-03 15:09:41.386338</AddressTimestamp><ContactPerson>BIEDERMANN,SIMON</ContactPerson><Description>HCP5 Lieferantenpostfach f&#252;r Bosch und ESR</Description><OrganisationalUnit>HCP5BS-ESR</OrganisationalUnit><Group /><Plant>FF</Plant></Address><PersonalContractor><UserId>D688873</UserId><UserName>KLEINE,VERONIKA</UserName><Email>veronika.kleine@esrlabs.com</Email><Phone /></PersonalContractor></Contractor><DueDate>2021-01-09+01:00</DueDate><Status>2</Status></Supplier><TCB>false</TCB><LaunchPriority /><TrafficLight>1</TrafficLight></DevelopmentProblem></GetDevelopmentProblemDataResponseInternal></ns5:GetDevelopmentProblemDataResponse></ns0:Body></ns0:Envelope>

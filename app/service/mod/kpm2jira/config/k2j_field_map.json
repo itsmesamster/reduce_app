@@ -1,0 +1,40 @@
+{
+  "jira_issue": {
+    "project": "MOD",
+    "issuetype": "Customer Issue",
+    "summary": "ShortText?",
+    "description": "Description?",
+    "priority": "Rating?",
+    "assignee": "AccountID?",
+    "customfield_10503": "ProblemNumber?",
+    "components": "Function?",
+    "customfield_12600": "##cluster_mapping_based_on_software_version##",
+    "versions": "Software?",
+    "customfield_10500": "Hardware?",
+    "customfield_10501": "Reproducibility?",
+    "customfield_10900": "Exclaimer?",
+    "customfield_12640": { "value": "Audi KPM" },
+    "customfield_12740": "VerbundRelease?",
+    "customfield_12748": "PartNumber?"
+  },
+  "priority": {
+    "0": "Blocker",
+    "1": "Blocker",
+    "2": "Critical",
+    "3": "Critical",
+    "4": "Major",
+    "5": "Major",
+    "6": "Minor",
+    "7": "Minor",
+    "8": "Trivial",
+    "9": "Trivial",
+    "10": "Trivial"
+  },
+  "reproducibility" : {
+    "XI": "01 - Single Event",
+    "XE": "02 - Sporadic",
+    "XH": "03 - Frequent",
+    "XF": "03 - Frequent",
+    "XG": "04 - Reproducible"
+  }
+}

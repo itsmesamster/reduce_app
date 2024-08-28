@@ -1,0 +1,22 @@
+@startuml
+start
+:Fetch all Jira issues changed since <timestamp>;
+:Fetch all KPM issues changed since <timestamp>;
+:Fetch all Jira issues which have one of changed KPM ids;
+:Analyze issues;
+if (Jira issue was found for KPM ID) then (yes)
+  :Add issue to list: "issues to be updated";
+elseif (No Jira issue was found for KPM ID) then (yes)
+  :Add issue to queue: "new_jira_from_kpm";
+  stop
+elseif (Jira issue contains KPM ID) then (yes)
+  :Add issue to list: "issues to be updated";
+elseif (Jira issue does not contain KPM ID) then (yes)
+  :Add issue to queue: "new_kpm_from_jira";
+  stop
+endif
+:Sort out duplicates from list;
+:Add unique issues to queue: "sync_kpm_with_jira";
+stop
+
+@enduml
